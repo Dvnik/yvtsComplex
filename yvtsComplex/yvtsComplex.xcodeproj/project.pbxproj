@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123A7507253896D100E57DCF /* DrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A7506253896D100E57DCF /* DrViewController.swift */; };
 		129E7F0E252DB391000D2D8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E7F0D252DB391000D2D8D /* AppDelegate.swift */; };
 		129E7F10252DB391000D2D8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E7F0F252DB391000D2D8D /* SceneDelegate.swift */; };
 		129E7F12252DB391000D2D8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E7F11252DB391000D2D8D /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123A7506253896D100E57DCF /* DrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrViewController.swift; sourceTree = "<group>"; };
 		129E7F0A252DB391000D2D8D /* yvtsComplex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yvtsComplex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129E7F0D252DB391000D2D8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129E7F0F252DB391000D2D8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121DCDFB2538464500882851 /* DeviceRotation */ = {
+			isa = PBXGroup;
+			children = (
+				123A7506253896D100E57DCF /* DrViewController.swift */,
+			);
+			path = DeviceRotation;
+			sourceTree = "<group>";
+		};
+		123A7509253896DF00E57DCF /* PageChanges */ = {
+			isa = PBXGroup;
+			children = (
+				12B19F37252F6925006380B1 /* PageChange1VC.swift */,
+				12B19F3A252F6977006380B1 /* PageChange2VC.swift */,
+				12B19F3D252F6985006380B1 /* PageChange3VC.swift */,
+				12B19F40252F6D55006380B1 /* PageChangeInfoVC.swift */,
+			);
+			path = PageChanges;
+			sourceTree = "<group>";
+		};
 		129E7F01252DB391000D2D8D = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +85,8 @@
 		129E7F0C252DB391000D2D8D /* yvtsComplex */ = {
 			isa = PBXGroup;
 			children = (
-				12B19F35252F01B5006380B1 /* PageChanges */,
+				121DCDFB2538464500882851 /* DeviceRotation */,
+				123A7509253896DF00E57DCF /* PageChanges */,
 				129E7F0D252DB391000D2D8D /* AppDelegate.swift */,
 				129E7F0F252DB391000D2D8D /* SceneDelegate.swift */,
 				129E7F11252DB391000D2D8D /* ViewController.swift */,
@@ -74,17 +96,6 @@
 				129E7F1B252DB391000D2D8D /* Info.plist */,
 			);
 			path = yvtsComplex;
-			sourceTree = "<group>";
-		};
-		12B19F35252F01B5006380B1 /* PageChanges */ = {
-			isa = PBXGroup;
-			children = (
-				12B19F37252F6925006380B1 /* PageChange1VC.swift */,
-				12B19F3A252F6977006380B1 /* PageChange2VC.swift */,
-				12B19F3D252F6985006380B1 /* PageChange3VC.swift */,
-				12B19F40252F6D55006380B1 /* PageChangeInfoVC.swift */,
-			);
-			name = PageChanges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				129E7F10252DB391000D2D8D /* SceneDelegate.swift in Sources */,
 				12B19F3B252F6977006380B1 /* PageChange2VC.swift in Sources */,
 				12B19F38252F6925006380B1 /* PageChange1VC.swift in Sources */,
+				123A7507253896D100E57DCF /* DrViewController.swift in Sources */,
 				12B19F41252F6D55006380B1 /* PageChangeInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

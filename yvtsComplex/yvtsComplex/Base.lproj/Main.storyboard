@@ -24,13 +24,23 @@
                                     <segue destination="19a-AH-8tE" kind="show" id="HPb-IS-ovr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJC-BW-k6b">
+                                <rect key="frame" x="129" y="125" width="117" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="2.旋轉畫面"/>
+                                <connections>
+                                    <segue destination="yDl-CT-bNF" kind="show" id="n8W-e8-xWh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="U0i-Y8-6kr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9cQ-HN-eMH"/>
+                            <constraint firstItem="tJC-BW-k6b" firstAttribute="centerX" secondItem="U0i-Y8-6kr" secondAttribute="centerX" id="9qc-by-wCK"/>
                             <constraint firstItem="U0i-Y8-6kr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ROl-pU-BVY"/>
-                            <constraint firstItem="U0i-Y8-6kr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Rks-fd-H6u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U0i-Y8-6kr" secondAttribute="trailing" constant="20" id="WtL-t9-41y"/>
+                            <constraint firstItem="tJC-BW-k6b" firstAttribute="top" secondItem="U0i-Y8-6kr" secondAttribute="bottom" constant="20" id="lHm-VB-hJH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZuG-yH-opY"/>
@@ -38,6 +48,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="93.103448275862078"/>
+        </scene>
+        <!--Dr View Controller-->
+        <scene sceneID="M2J-bl-mvH">
+            <objects>
+                <viewController id="yDl-CT-bNF" customClass="DrViewController" customModule="yvtsComplex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHX-FG-5h9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drCar1" translatesAutoresizingMaskIntoConstraints="NO" id="iAE-wV-iL8">
+                                <rect key="frame" x="10" y="54" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="WoP-RA-JIl"/>
+                                    <constraint firstAttribute="width" constant="64" id="jb5-UB-vgV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMH-bs-zLQ">
+                                <rect key="frame" x="107.5" y="313" width="160" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="doAnimation:" destination="yDl-CT-bNF" eventType="touchUpInside" id="j8M-w7-JgQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ivi-1G-L0Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iAE-wV-iL8" firstAttribute="top" secondItem="Ivi-1G-L0Q" secondAttribute="top" constant="10" id="MTG-MW-lie"/>
+                            <constraint firstItem="WMH-bs-zLQ" firstAttribute="centerY" secondItem="CHX-FG-5h9" secondAttribute="centerY" id="TY4-xJ-IfD"/>
+                            <constraint firstItem="iAE-wV-iL8" firstAttribute="leading" secondItem="Ivi-1G-L0Q" secondAttribute="leading" constant="10" id="XQA-rp-8ht"/>
+                            <constraint firstItem="WMH-bs-zLQ" firstAttribute="centerX" secondItem="CHX-FG-5h9" secondAttribute="centerX" id="xwE-46-Rmx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hJd-AJ-ecN"/>
+                    <connections>
+                        <outlet property="imgPic" destination="iAE-wV-iL8" id="wZD-G4-70K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8R-hQ-l48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="1701"/>
         </scene>
         <!--Page Change1VC-->
         <scene sceneID="Bdq-eQ-URW">
@@ -135,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wB2-et-g44" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="1557"/>
+            <point key="canvasLocation" x="3580" y="812"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9ET-cy-aIP">
@@ -308,6 +360,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="drCar1" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
